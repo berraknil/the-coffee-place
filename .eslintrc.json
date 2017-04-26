@@ -21,6 +21,7 @@
         "constructor-super": "warn",
         "valid-typeof": "warn",
         "linebreak-style": "off",
-        "semi": [2, "never"]
+        "semi": [2, "never"],
+        "no-console": "off"
     }
 }
