@@ -13,11 +13,22 @@ class Blog extends Component {
     this.props.fetchPosts()
   }
 
+  renderPosts() {
+    return this.props.posts.map((post, i) => {
+      return(
+      <li key={i}>
+        <h1>{post.title.rendered}</h1>
+        <span dangerouslySetInnerHTML={{ __html: post.content.rendered }}></span>
+      </li>
+      )
+    })
+  }
   render() {
     return (
       <div>
-        List of blog posts
-        {console.log(this.props.posts)}
+        <ul>
+          {this.renderPosts()}
+        </ul>
       </div>
     )
   }

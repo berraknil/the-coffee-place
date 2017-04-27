@@ -6,11 +6,9 @@ import { fetchPage } from '../actions/index'
 /* import PropTypes from 'prop-types'*/
 
 class Home extends Component {
-  /* constructor(props) {
-    super(props)
+ 
 
-  }*/
-
+//Just change the page number depending on route?
   componentDidMount() {
     this.props.fetchPage(156)
   }
@@ -18,7 +16,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        Home Page!
+      <span dangerouslySetInnerHTML={{ __html: this.props.page.rendered }}></span>
       </div>
     )
   }
@@ -29,4 +27,9 @@ const mapDispatchToProps = (dispatch) => {
   return bindActionCreators({ fetchPosts }, dispatch)
 }*/
 
-export default connect(null, { fetchPage })(Home)
+function mapStateToProps(state) {
+  return { page: state.page.data }
+}
+
+
+export default connect(mapStateToProps, { fetchPage })(Home)

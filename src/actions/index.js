@@ -14,9 +14,9 @@ export function fetchPosts() {
 }
 
 export function fetchPage(id) {
-  const page = axios.get(`${URL}/pages/${id}`)
+  const request = axios.get(`${URL}/pages/${id}`)
   return {
     type: FETCH_PAGE,
-    page,
+    payload: request,
   }
 }
