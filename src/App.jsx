@@ -1,30 +1,36 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
+import { Route, Link } from 'react-router-dom'
 import './App.css'
+import Posts from './components/Posts'
 
-fetch('https://demo.wp-api.org/wp-json/wp/v2/pages').then(data => this.updateState(data))
+const Home = () => (
+  <div>
+    <h2>Home</h2>
+  </div>
+)
+
+const About = () => (
+  <div>
+    <h2>About</h2>
+  </div>
+)
+
 
 class App extends Component {
-  constructor() {
-    super()
-    this.state = {
-      data: {},
-    }
-  }
-  updateState(data) {
-    this.setState({ data })
-    console.log(this.state.data)
-  }
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="app">
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/posts">Posts</Link></li>
+        </ul>
+
+        <hr />
+
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route path="/posts" component={Posts} />
       </div>
     )
   }
