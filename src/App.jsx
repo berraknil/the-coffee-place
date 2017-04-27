@@ -2,12 +2,8 @@ import React, { Component } from 'react'
 import { Route, Link } from 'react-router-dom'
 import './App.css'
 import Posts from './components/Posts'
+import Home from './components/Home'
 
-const Home = () => (
-  <div>
-    <h2>Home</h2>
-  </div>
-)
 
 const About = () => (
   <div>
