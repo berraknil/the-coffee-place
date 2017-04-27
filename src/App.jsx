@@ -1,23 +1,32 @@
 import React, { Component } from 'react'
 import logo from './logo.svg'
 import './App.css'
-const WPAPI = require('wpapi')
 
-const wp = new WPAPI({ endpoint: 'http://developtests.com/wp-json' })
+fetch('https://demo.wp-api.org/wp-json/wp/v2/pages').then(data => this.updateState(data))
+
 class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      data: {},
+    }
+  }
+  updateState(data) {
+    this.setState({ data })
+    console.log(this.state.data)
+  }
   render() {
-    return wp
-      .pages()
-      .then(page =>
-        page.map((p) => {
-          if (p.id === 156) {
-            console.log(p.title.rendered)
-          } else {
-            console.log(p.id)
-          }
-        }),
-      )
-      .catch(err => console.error(err))
+    return (
+      <div className="App">
+        <div className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h2>Welcome to React</h2>
+        </div>
+        <p className="App-intro">
+          To get started, edit <code>src/App.js</code> and save to reload.
+        </p>
+      </div>
+    )
   }
 }
 
