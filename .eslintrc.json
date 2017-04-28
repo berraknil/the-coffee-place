@@ -22,6 +22,7 @@
         "valid-typeof": "warn",
         "linebreak-style": "off",
         "semi": [2, "never"],
-        "no-console": "off"
+        "no-console": "off",
+        "react/no-danger": "off"
     }
 }

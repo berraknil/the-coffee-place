@@ -4,7 +4,7 @@ import './App.css'
 import Blog from './components/Blog'
 import Home from './components/Home'
 import About from './components/About'
-import Page from './components/Page'
+import Contact from './components/Contact'
 
 
 
@@ -25,10 +25,8 @@ class App extends Component {
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/blog" component={Blog} />
-        
-        <Route path="/contact" render={
-          () => <Page id={19} />
-        }/>
+        <Route path="/Contact" component={Contact} />
+
       </div>
     )
   }
