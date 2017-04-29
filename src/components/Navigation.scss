@@ -1,0 +1,28 @@
+.navigation {
+
+  font-family: 'Niconne', cursive;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  list-style-type: none;
+  height: auto;
+  background-color: rgba(67, 39, 38, .3);
+  min-width: 100%;
+  li {
+    flex: 1;
+  }
+  a {
+    color: white;
+    font-size: 26px;
+    display: block;
+    min-height: 100%;
+    padding: .5em .3em;
+    text-decoration: none;
+    &.active {
+      color: rgba(67, 39, 38, 1);
+      background: #D3D0CD;
+    
+    }
+
+  }
+}

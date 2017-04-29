@@ -24,18 +24,3 @@
 }*/
 .app {
   height: 100vh; }
-
-.navigation {
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  height: auto;
-  background-color: rgba(67, 39, 38, 0.3);
-  /*rgba(0, 0, 0, .3);*/ }
-
-.navigation a {
-  color: white;
-  font-size: 26px; }
-
-.navigation li {
-  padding: 1rem 0; }
