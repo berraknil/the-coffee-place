@@ -1,32 +1,29 @@
 import React, { Component } from 'react'
-import { Route, Link } from 'react-router-dom'
-import './App.css'
-import Blog from './components/Blog'
+import { Route, NavLink } from 'react-router-dom'
+import Menu from './components/Menu'
 import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact'
-
-
+import './App.css'
 
 class App extends Component {
   render() {
     return (
       <div className="app">
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/blog">Blog</Link></li>
-          
-          <li><Link to="/contact">Contact</Link></li>
-        </ul>
-
-        <hr />
-
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/blog" component={Blog} />
-        <Route path="/Contact" component={Contact} />
-
+        <header>
+          <ul className="navigation">
+            <li><NavLink to="/">Home</NavLink></li>
+            <li><NavLink to="/about">About</NavLink></li>
+            <li><NavLink to="/menu">Menu</NavLink></li>
+            <li><NavLink to="/contact">Contact</NavLink></li>
+          </ul>
+        </header>
+        <main>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/menu" component={Menu} />
+          <Route path="/Contact" component={Contact} />
+        </main>
       </div>
     )
   }
