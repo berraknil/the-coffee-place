@@ -4,16 +4,17 @@ import { connect } from 'react-redux'
 */
 import { fetchPage } from '../actions/index'
 /* import PropTypes from 'prop-types'*/
+import './Menu.css'
 
-class Page extends Component {
+class Menu extends Component {
   // Just change the page number depending on route?
   componentDidMount() {
-    this.props.fetchPage(19)
+    this.props.fetchPage(162)
   }
 
   render() {
     return (
-      <div>
+      <div className="menu">
         <span dangerouslySetInnerHTML={{ __html: this.props.page.rendered }} />
       </div>
     )
@@ -29,4 +30,4 @@ function mapStateToProps(state) {
   return { page: state.page.data }
 }
 
-export default connect(mapStateToProps, { fetchPage })(Page)
+export default connect(mapStateToProps, { fetchPage })(Menu)

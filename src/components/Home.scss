@@ -34,3 +34,13 @@
   padding: 1rem;  
   background-color: rgba(67, 39, 38, .3);
 }
+
+.social-menu {
+  
+  list-style-type: none;
+display: flex;
+justify-content: space-between;
+li {
+  padding: .5rem;
+}
+}

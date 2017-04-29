@@ -8,6 +8,7 @@ class Home extends Component {
     return (
       <div className="home">
         <h1 className="home__title">The Coffee Place</h1>
+       
         <video className="video-background" autoPlay loop>
           <source src={coffeeVideo} type="video/mp4" />
           Your browser does not support the video tag.

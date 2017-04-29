@@ -27,3 +27,10 @@
   color: white;
   padding: 1rem;
   background-color: rgba(67, 39, 38, 0.3); }
+
+.social-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between; }
+  .social-menu li {
+    padding: .5rem; }

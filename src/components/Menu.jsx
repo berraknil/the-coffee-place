@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { fetchPosts } from '../actions/index'
 /* import PropTypes from 'prop-types'*/
 
-class Blog extends Component {
+class Menu extends Component {
   /* constructor(props) {
     super(props)
 
@@ -43,4 +43,4 @@ function mapStateToProps(state) {
   return { posts: state.posts.data }
 }
 
-export default connect(mapStateToProps, { fetchPosts })(Blog)
+export default connect(mapStateToProps, { fetchPosts })(Menu)
