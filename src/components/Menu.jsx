@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { fetchPosts } from '../actions/index'
 /* import PropTypes from 'prop-types'*/
+import './Menu.css'
 
 class Menu extends Component {
   /* constructor(props) {
@@ -14,19 +15,17 @@ class Menu extends Component {
   }
 
   renderPosts() {
-    return this.props.posts.map((post, i) => {
-      return(
-      <li key={i}>
-        <h1>{post.title.rendered}</h1>
-        <span dangerouslySetInnerHTML={{ __html: post.content.rendered }}></span>
+    return this.props.posts.map(post => (
+      <li className="menu-list__item" key={post.id}>
+        <h2>{post.title.rendered}</h2>
+        <span className="menu-list__content" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
       </li>
-      )
-    })
+      ))
   }
   render() {
     return (
-      <div>
-        <ul>
+      <div className="menu">
+        <ul className="menu__list">
           {this.renderPosts()}
         </ul>
       </div>

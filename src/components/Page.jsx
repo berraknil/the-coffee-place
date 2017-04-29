@@ -1,22 +1,23 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-/* import { bindActionCreators } from 'redux'
+/*import { bindActionCreators } from 'redux'
 */
 import { fetchPage } from '../actions/index'
 /* import PropTypes from 'prop-types'*/
-import './Contact.css'
+import './About.css'
 
-class Contact extends Component {
-  // Just change the page number depending on route?
+class Home extends Component {
+ 
+
+//Just change the page number depending on route?
   componentDidMount() {
-    this.props.fetchPage(19)
+    this.props.fetchPage(this.props.id)
   }
 
   render() {
     return (
-      <div className="contact">
-        <span dangerouslySetInnerHTML={{ __html: this.props.page.rendered }} />
-        {console.log(this.props.page.rendered )}
+      <div className="about">
+      <span dangerouslySetInnerHTML={{ __html: this.props.page.rendered }}></span>
       </div>
     )
   }
@@ -31,4 +32,5 @@ function mapStateToProps(state) {
   return { page: state.page.data }
 }
 
-export default connect(mapStateToProps, { fetchPage })(Contact)
+
+export default connect(mapStateToProps, { fetchPage })(Home)
