@@ -22,7 +22,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 80vh;
+  height: 100%;
 
   font-family: 'Niconne', cursive;
 }
@@ -30,9 +30,9 @@
 .home__title {
   border: 4px solid white;
   border-radius: 6px;
-  color: white;
-  padding: 1rem;  
-  background-color: rgba(67, 39, 38, .3);
+  color: #D0D0D3;
+  padding: .7rem 1.2rem;  
+  background-color: rgba(67, 39, 38, .7);
 }
 
 .social-menu {
