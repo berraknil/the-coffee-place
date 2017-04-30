@@ -3,10 +3,13 @@
 
 body {
   //font-size: 20px;
-  background: white;
+  background:#D3D0CD;
   color: #24251C;
+  @media screen and (min-width: 40em) {
+    font-size: 28px;
+  }
   @media screen and (min-width: 62em) {
-    font-size: 26px;
+    font-size: 30px;
   }
    @media screen and (min-width: 110em) {
     font-size: 32px;

@@ -1,7 +1,7 @@
 .menu {
   background-color: #D3D0CD;
 
-  padding: 1rem;
+  //padding: 1rem;
 }
 
 .menu__list {  
@@ -9,19 +9,16 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-/*  justify-content: space-between;
-  li {
-    flex-basis: 32%;
-  }*/
 }
 
 .menu-list__item {
- //background-color: rgba(67, 39, 38, .3);
+ background-color: rgba(67, 39, 38, .3);
  //color: white;
  border-radius: 10px;
-  border: 2px solid black;
-h3 {
+  border: 2px solid white;
+h2 {
   margin-top: 0;
+  //color: white;
 }
 
 padding: .5rem;
@@ -50,8 +47,9 @@ margin-bottom: 1rem;
   img {
     border-radius: 10px;
   /*  display: none;*/
-  height: 35vh;
+  height: 26vh;
   width: auto;
+  border: 1px solid white;
     /* flex-basis: 40%;
   }
   p {

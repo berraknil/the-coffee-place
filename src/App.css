@@ -60,12 +60,16 @@ h4 {font-size: 1.414em;}
 
 small, .font_small {font-size: 0.707em;}*/
 body {
-  background: white;
+  background: #D3D0CD;
   color: #24251C; }
+
+@media screen and (min-width: 40em) {
+  body {
+    font-size: 28px; } }
 
 @media screen and (min-width: 62em) {
   body {
-    font-size: 26px; } }
+    font-size: 30px; } }
 
 @media screen and (min-width: 110em) {
   body {
