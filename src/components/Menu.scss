@@ -16,10 +16,15 @@
 }
 
 .menu-list__item {
-  border: 1px solid black;
-h2 {
-  margin: 1rem 0;
+ //background-color: rgba(67, 39, 38, .3);
+ //color: white;
+ border-radius: 10px;
+  border: 2px solid black;
+h3 {
+  margin-top: 0;
 }
+
+padding: .5rem;
 margin-bottom: 1rem;
   //background: black;
 
@@ -38,8 +43,16 @@ margin-bottom: 1rem;
   //background: #090909;
   //color: white;
   //padding: .5rem;
+  p {
+    margin: 0;
+    font-size: 1.3rem;
+  }
   img {
-  /* flex-basis: 40%;
+    border-radius: 10px;
+  /*  display: none;*/
+  height: 35vh;
+  width: auto;
+    /* flex-basis: 40%;
   }
   p {
     flex-basis: 48%;
