@@ -13,16 +13,18 @@
   }
   a {
     color: white;
-    font-size: inherit;
+    font-size: 24px;
     display: block;
     min-height: 100%;
-    padding: .5em .3em;
+    padding: .3em;
     text-decoration: none;
     &.active {
       color: rgba(67, 39, 38, 1);
       background: #D3D0CD;
     
     }
-
+      @media screen and (min-width: 62em) {
+    font-size: inherit;
+  }
   }
 }

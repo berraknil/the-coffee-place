@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Home.css'
-import coffeeVideo from './coffee_place.mp4'
+import coffeeVideo from './coffeeBG.mp4'
 
 class Home extends Component {
 
