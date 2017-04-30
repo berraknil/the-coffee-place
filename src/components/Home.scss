@@ -14,6 +14,10 @@
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     background-size: cover; 
+    @media screen and (max-width: 40em) {
+    display: none;
+    
+  }
 }
 
 
@@ -24,6 +28,12 @@
   flex-direction: column;
   height: 100%;
   font-family: 'Niconne', cursive;
+  @media screen and (max-width: 40em) {
+   
+  background: url('./homeBG.jpg') center #D3D0CD;
+  background-size: cover;
+    
+  }
 }
 
 .home__title {
