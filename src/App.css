@@ -61,7 +61,7 @@ h4 {font-size: 1.414em;}
 small, .font_small {font-size: 0.707em;}*/
 body {
   background: #D3D0CD;
-  color: #24251C; }
+  color: #432726; }
 
 @media screen and (min-width: 40em) {
   body {
@@ -74,6 +74,15 @@ body {
 @media screen and (min-width: 110em) {
   body {
     font-size: 32px; } }
+
+h2 {
+  margin-top: .5rem;
+  color: #432726;
+  /*text-shadow:
+      -1px -1px 0 #432726,
+      1px -1px 0 #432726,
+      -2px 2px 0 #432726,
+      1px 1px 0 #432726;*/ }
 
 .app {
   height: 100vh;

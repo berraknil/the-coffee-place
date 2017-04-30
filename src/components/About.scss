@@ -2,6 +2,15 @@
   //background:#D3D0CD;
   //border:1px solid #D3D0CD;
   padding: 1rem;
+text-align: center;
 }
 
+.about__content {
+  //border: 1px solid white;
+  margin: auto;  
+  max-width: 90%;
+  @media screen and (min-width: 40em) { 
+     max-width: 70%;
+  } 
+}
 

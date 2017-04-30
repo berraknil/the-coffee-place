@@ -17,7 +17,7 @@ class Home extends Component {
   render() {
     return (
       <div className="about">
-      <span dangerouslySetInnerHTML={{ __html: this.props.page.rendered }}></span>
+      <div className="about__content" dangerouslySetInnerHTML={{ __html: this.props.page.rendered }} />
       </div>
     )
   }

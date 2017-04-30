@@ -18,7 +18,7 @@ class Menu extends Component {
     return this.props.posts.map(post => (
       <li className="menu-list__item" key={post.id}>
         <h4>{post.title.rendered}</h4>
-        <span className="menu-list__content" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+        <div className="menu-list__content" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
       </li>
       ))
   }

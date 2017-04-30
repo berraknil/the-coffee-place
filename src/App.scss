@@ -4,7 +4,7 @@
 body {
   //font-size: 20px;
   background:#D3D0CD;
-  color: #24251C;
+  color:  #432726; //#24251C;
   @media screen and (min-width: 40em) {
     font-size: 28px;
   }
@@ -16,6 +16,15 @@ body {
   }
 }
 
+ h2 {
+    margin-top: .5rem;
+    color: #432726;
+    /*text-shadow:
+      -1px -1px 0 #432726,
+      1px -1px 0 #432726,
+      -2px 2px 0 #432726,
+      1px 1px 0 #432726;*/
+ }
 
 .app {
   height: 100vh;
