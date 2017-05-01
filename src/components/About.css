@@ -8,3 +8,7 @@
 @media screen and (min-width: 40em) {
   .about__content {
     max-width: 70%; } }
+
+@media screen and (min-width: 66em) {
+  .about__content {
+    padding-top: 2rem; } }

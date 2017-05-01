@@ -5,10 +5,7 @@ import { fetchPosts } from '../actions/index'
 import './Menu.css'
 
 class Menu extends Component {
-  /* constructor(props) {
-    super(props)
 
-  }*/
 
   componentDidMount() {
     this.props.fetchPosts()

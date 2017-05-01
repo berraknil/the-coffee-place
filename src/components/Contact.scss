@@ -15,6 +15,9 @@
 .contact__content {
   //margin: auto;
   
+  @media screen and (min-width: 66em) { 
+     padding-top: 2rem;
+  } 
 }
 
 .social {

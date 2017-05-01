@@ -3,8 +3,15 @@
   @media screen and (min-width: 40em) { 
      padding: 1rem;
   }
+  
     text-align: center;
-    //color: rgba(67, 39, 38, 1);
+    h2{
+
+    
+  @media screen and (min-width: 66em) { 
+     padding: 2rem;
+  } 
+        }    //color: rgba(67, 39, 38, 1);
 /*  h2 {
     margin-top: 1rem;
     color: white;
@@ -23,9 +30,6 @@
   text-align: center;
    @media screen and (min-width: 40em) { 
      flex-flow: row wrap;
-  }
-  @media screen and (min-width: 62em) {
-
   }
 }
 
