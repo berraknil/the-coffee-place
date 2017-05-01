@@ -2,7 +2,6 @@
 
 
 body {
-  //font-size: 20px;
   background:#D3D0CD;
   color:  #432726; //#24251C;
   @media screen and (min-width: 40em) {
@@ -19,6 +18,7 @@ body {
  h2 {
     margin-top: .5rem;
     color: #432726;
+    font-weight: bold;
     /*text-shadow:
       -1px -1px 0 #432726,
       1px -1px 0 #432726,

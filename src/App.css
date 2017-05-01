@@ -27,6 +27,9 @@ h3 {
 h4 {
   font-size: 1.2em; }
 
+p {
+  font-size: 1.2em; }
+
 small, .font_small {
   font-size: 0.833em; }
 
@@ -78,6 +81,7 @@ body {
 h2 {
   margin-top: .5rem;
   color: #432726;
+  font-weight: bold;
   /*text-shadow:
       -1px -1px 0 #432726,
       1px -1px 0 #432726,

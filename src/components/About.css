@@ -3,8 +3,7 @@
   text-align: center; }
 
 .about__content {
-  margin: auto;
-  max-width: 90%; }
+  margin: auto; }
 
 @media screen and (min-width: 40em) {
   .about__content {
