@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-/* import { bindActionCreators } from 'redux'
-*/
-import { fetchPage } from '../actions/index'
+import { fetchContactPage } from '../actions/index'
 /* import PropTypes from 'prop-types'*/
 import './Contact.css'
 import twitter from '../icons/twitter.svg'
@@ -11,9 +9,8 @@ import gmail from '../icons/gmail.svg'
 import github from '../icons/github.svg'
 
 class Contact extends Component {
-  // Just change the page number depending on route?
   componentDidMount() {
-    this.props.fetchPage(19)
+    this.props.fetchContactPage()
   }
 
   render() {
@@ -67,13 +64,8 @@ class Contact extends Component {
   }
 }
 
-/*
-const mapDispatchToProps = (dispatch) => {
-  return bindActionCreators({ fetchPosts }, dispatch)
-}*/
-
 function mapStateToProps(state) {
-  return { page: state.page.data }
+  return { page: state.contactPage.data }
 }
 
-export default connect(mapStateToProps, { fetchPage })(Contact)
+export default connect(mapStateToProps, { fetchContactPage })(Contact)

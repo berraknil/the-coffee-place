@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux'
 import posts from './posts'
-import page from './page'
+import aboutPage from './aboutPage'
+import contactPage from './contactPage'
 
 const rootReducer = combineReducers({
   posts,
-  page,
+  aboutPage,
+  contactPage,
 })
 
 export default rootReducer
