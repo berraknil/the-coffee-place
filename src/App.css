@@ -40,18 +40,15 @@ body {
   background: #d3d0cd;
   color: #432726;
   font-family: 'Niconne', 'Arial', sans-serif; }
-
-@media screen and (min-width: 40em) {
-  body {
-    font-size: 28px; } }
-
-@media screen and (min-width: 66em) {
-  body {
-    font-size: 30px; } }
-
-@media screen and (min-width: 110em) {
-  body {
-    font-size: 32px; } }
+  @media screen and (min-width: 40em) {
+    body {
+      font-size: 28px; } }
+  @media screen and (min-width: 66em) {
+    body {
+      font-size: 30px; } }
+  @media screen and (min-width: 110em) {
+    body {
+      font-size: 32px; } }
 
 .app {
   display: flex;

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css'
-import coffeeVideo from './coffeeBG.mp4'
+import coffeeVideo from './home.mp4'
 
 const Home = () => (
   <div className="home">

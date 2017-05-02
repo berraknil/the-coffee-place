@@ -1,5 +1,5 @@
 {
-  "name": "minimalist",
+  "name": "the-coffee-place",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,13 +7,11 @@
     "prop-types": "^15.5.8",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-google-maps": "^7.0.0",
     "react-redux": "^5.0.4",
     "react-router-dom": "^4.1.1",
-    "react-sticky": "^5.0.8",
     "redux": "^3.6.0",
     "redux-promise": "^0.5.3",
-    "wpapi": "^1.0.3"
+    "serve": "^5.1.4"
   },
   "devDependencies": {
     "eslint": "3.19.0",
@@ -26,6 +24,7 @@
     "react-scripts": "0.9.5"
   },
   "scripts": {
+    "now-start": "serve build/",
     "build-css": "node-sass src/ -o src/",
     "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
