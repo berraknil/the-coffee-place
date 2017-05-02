@@ -7,10 +7,14 @@ body {
   line-height: 1.45; }
 
 p {
+  font-size: 1.2em;
   margin-bottom: 1.3em; }
 
-h1, h2, h3, h4 {
-  margin: 1.414em 0 0.5em;
+h1,
+h2,
+h3,
+h4 {
+  margin: 1.414em 0 .5em;
   font-weight: inherit;
   line-height: 1.2; }
 
@@ -27,53 +31,25 @@ h3 {
 h4 {
   font-size: 1.2em; }
 
-p {
-  font-size: 1.2em; }
+small,
+.font_small {
+  font-size: .833em; }
 
-small, .font_small {
-  font-size: 0.833em; }
-
-/*html {font-size: 1.375em;}
-
-body {
-  font-family: 'Niconne', cursive;;
-  font-weight: 400;
-  line-height: 1.45;
-}
-
-p {margin-bottom: 1.3em;}
-
-h2, h3, h4 {
-  margin: 1.414em 0 0.5em;
-  font-weight: inherit;
-  line-height: 1.2;
-}
-
-h1 {
-  
-  margin: 1.414em 0 0.5em;
-  font-size: 2.5em;
-}
-
-h2 {font-size: 2.827em;}
-
-h3 {font-size: 1.999em;}
-
-h4 {font-size: 1.414em;}
-
-small, .font_small {font-size: 0.707em;}*/
 body {
   background: #D3D0CD;
   color: #432726; }
-  @media screen and (min-width: 40em) {
-    body {
-      font-size: 28px; } }
-  @media screen and (min-width: 62em) {
-    body {
-      font-size: 30px; } }
-  @media screen and (min-width: 110em) {
-    body {
-      font-size: 32px; } }
+
+@media screen and (min-width: 40em) {
+  body {
+    font-size: 28px; } }
+
+@media screen and (min-width: 62em) {
+  body {
+    font-size: 30px; } }
+
+@media screen and (min-width: 110em) {
+  body {
+    font-size: 32px; } }
 
 h2 {
   margin-top: .5rem;

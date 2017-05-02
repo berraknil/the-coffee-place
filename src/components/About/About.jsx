@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { fetchAboutPage } from '../actions/index'
-/* import PropTypes from 'prop-types'*/
+import PropTypes from 'prop-types'
+import { fetchAboutPage } from '../../actions/index'
 import './About.css'
 
 class Home extends Component {
   componentDidMount() {
     this.props.fetchAboutPage()
   }
-
   render() {
     return (
       <div className="about">
@@ -23,6 +22,13 @@ class Home extends Component {
 
 function mapStateToProps(state) {
   return { page: state.aboutPage.data }
+}
+
+Home.propTypes = {
+  fetchAboutPage: PropTypes.func.isRequired,
+  page: PropTypes.shape({
+    rendered: PropTypes.shape.isRequired,
+  }).isRequired,
 }
 
 export default connect(mapStateToProps, { fetchAboutPage })(Home)

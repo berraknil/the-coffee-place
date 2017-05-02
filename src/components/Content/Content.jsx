@@ -1,9 +1,9 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
-import Menu from './Menu'
-import Home from './Home'
-import About from './About'
-import Contact from './Contact'
+import Menu from '../Menu/Menu'
+import Home from '../Home/Home'
+import About from '../About/About'
+import Contact from '../Contact/Contact'
 import './Content.css'
 
 const Content = () => (

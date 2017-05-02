@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { fetchContactPage } from '../actions/index'
-/* import PropTypes from 'prop-types'*/
+import PropTypes from 'prop-types'
+import { fetchContactPage } from '../../actions/index'
 import './Contact.css'
-import twitter from '../icons/twitter.svg'
-import instagram from '../icons/instagram.svg'
-import gmail from '../icons/gmail.svg'
-import github from '../icons/github.svg'
+import twitter from './icons/twitter.svg'
+import instagram from './icons/instagram.svg'
+import gmail from './icons/gmail.svg'
+import github from './icons/github.svg'
 
 class Contact extends Component {
   componentDidMount() {
@@ -66,6 +66,13 @@ class Contact extends Component {
 
 function mapStateToProps(state) {
   return { page: state.contactPage.data }
+}
+
+Contact.propTypes = {
+  fetchContactPage: PropTypes.func.isRequired,
+  page: PropTypes.shape({
+    rendered: PropTypes.shape.isRequired,
+  }).isRequired,
 }
 
 export default connect(mapStateToProps, { fetchContactPage })(Contact)
