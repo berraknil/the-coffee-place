@@ -38,18 +38,15 @@ small,
 body {
   background: #D3D0CD;
   color: #432726; }
-
-@media screen and (min-width: 40em) {
-  body {
-    font-size: 28px; } }
-
-@media screen and (min-width: 62em) {
-  body {
-    font-size: 30px; } }
-
-@media screen and (min-width: 110em) {
-  body {
-    font-size: 32px; } }
+  @media screen and (min-width: 40em) {
+    body {
+      font-size: 28px; } }
+  @media screen and (min-width: 62em) {
+    body {
+      font-size: 30px; } }
+  @media screen and (min-width: 110em) {
+    body {
+      font-size: 32px; } }
 
 h2 {
   margin-top: .5rem;
