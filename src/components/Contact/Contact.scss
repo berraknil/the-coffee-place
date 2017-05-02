@@ -3,38 +3,36 @@
   margin: auto;
   text-align: center;
   max-width: 90%;
-  @media screen and (min-width: 40em) { 
-     max-width: 50%;
-  } 
-  
-  @media screen and (min-width: 62em) { 
-     max-width: 40%;
-  } 
+  @media screen and (min-width: 40em) {
+    max-width: 50%;
+  }
+    
+  @media screen and (min-width: 62em) {
+    max-width: 40%;
+  }
 }
 
 .contact__content {
-  //margin: auto;
-  
-  @media screen and (min-width: 66em) { 
-     padding-top: 2rem;
-  } 
+  @media screen and (min-width: 66em) {
+    padding-top: 2rem;
+  }
 }
 
 .social {
-  list-style-type: none;
   display: flex;
   justify-content: center;
+  list-style-type: none;
   margin: auto;
+
   li {
     flex-basis: 20%;
-
-     @media screen and (min-width: 66em) { 
-      flex-basis: 13%;      
-  } 
     padding: .5em;
-   img {
-     width: 10vmin;
-  
-   }
+    @media screen and (min-width: 66em) {
+      flex-basis: 13%;
+  }
+
+    img {
+      width: 10vmin;
+    }
   }
 }

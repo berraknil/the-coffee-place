@@ -1,33 +1,26 @@
 @import './typography.scss';
 
+$font-color: #432726;
+$bg-color: #d3d0cd;
+$cursive-font: 'Niconne', cursive;
 
 body {
-  background:#D3D0CD;
-  color:  #432726; //#24251C;
+  background: $bg-color;
+  color: $font-color;
+  font-family: $cursive-font;
   @media screen and (min-width: 40em) {
     font-size: 28px;
   }
-  @media screen and (min-width: 62em) {
+  @media screen and (min-width: 66em) {
     font-size: 30px;
   }
-   @media screen and (min-width: 110em) {
+  @media screen and (min-width: 110em) {
     font-size: 32px;
   }
 }
 
- h2 {
-    margin-top: .5rem;
-    color: #432726;
-    font-weight: bold;
-    /*text-shadow:
-      -1px -1px 0 #432726,
-      1px -1px 0 #432726,
-      -2px 2px 0 #432726,
-      1px 1px 0 #432726;*/
- }
-
 .app {
-  height: 100vh;
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
