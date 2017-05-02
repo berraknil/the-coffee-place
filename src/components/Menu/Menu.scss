@@ -29,7 +29,11 @@
   background-color: rgba(67, 39, 38, .3);
   border-radius: 10px;
   border: 2px solid white;
+  
   @media screen and (min-width: 40em) {
+    flex-basis: 48%;
+  }
+  @media screen and (min-width: 66em) {
     flex-basis: 32%;
   }
   h4 {
