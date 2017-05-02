@@ -37,9 +37,6 @@ function mapStateToProps(state) {
 
 Menu.propTypes = {
   fetchPosts: PropTypes.func.isRequired,
-  posts: PropTypes.arrayOf({
-    post: PropTypes.shape.isRequired,
-  }).isRequired,
 }
 
 export default connect(mapStateToProps, { fetchPosts })(Menu)
