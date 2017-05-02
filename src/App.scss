@@ -7,7 +7,7 @@ $cursive-font: 'Niconne', cursive;
 body {
   background: $bg-color;
   color: $font-color;
-  font-family: $cursive-font;
+  font-family: $cursive-font, 'Times New Roman', serif;
   @media screen and (min-width: 40em) {
     font-size: 28px;
   }

@@ -39,7 +39,7 @@ small,
 body {
   background: #d3d0cd;
   color: #432726;
-  font-family: "Niconne", cursive; }
+  font-family: "Niconne", cursive, "Times New Roman", serif; }
   @media screen and (min-width: 40em) {
     body {
       font-size: 28px; } }
