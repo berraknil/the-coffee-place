@@ -30,9 +30,8 @@
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
-    // "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "lint": "eslint . --ext .json --ext .md",
+    "lint": "eslint . — ext .json,.md",
     "pretest": "npm run lint",
     "test": "echo \"No tests\""
   }
