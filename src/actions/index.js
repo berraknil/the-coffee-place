@@ -4,7 +4,7 @@ export const FETCH_POSTS = 'FETCH_POSTS'
 export const FETCH_ABOUT_PAGE = 'FETCH_ABOUT_PAGE'
 export const FETCH_CONTACT_PAGE = 'FETCH_CONTACT_PAGE'
 
-const URL = 'http://berrak-tests-things.com/wp-json/wp/v2'
+const URL = 'https://berrak-tests-things.com/wp-json/wp/v2'
 
 export const fetchPosts = () => {
   const request = axios.get(`${URL}/posts`)
