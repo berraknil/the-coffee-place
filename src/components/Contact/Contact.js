@@ -23,7 +23,7 @@ class Contact extends Component {
         <ul className="social">
           <li>
             <a
-              href="https://github.com/berraknil/portfolio"
+              href="https://berraknil.github.io/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -32,7 +32,7 @@ class Contact extends Component {
           </li>
           <li>
             <a
-              href="https://github.com/berraknil/portfolio"
+              href="https://berraknil.github.io/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -41,7 +41,7 @@ class Contact extends Component {
           </li>
           <li>
             <a
-              href="https://github.com/berraknil/portfolio"
+              href="https://berraknil.github.io/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -50,23 +50,20 @@ class Contact extends Component {
           </li>
           <li>
             <a
-              href="https://github.com/berraknil/portfolio"
+              href="https://berraknil.github.io/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img src={github} alt="" />
             </a>
           </li>
-
         </ul>
       </div>
     )
   }
 }
 
-function mapStateToProps(state) {
-  return { page: state.contactPage.data }
-}
+const mapStateToProps = state => ({ page: state.contactPage.data })
 
 Contact.propTypes = {
   fetchContactPage: PropTypes.func.isRequired,
@@ -75,4 +72,7 @@ Contact.propTypes = {
   }).isRequired,
 }
 
-export default connect(mapStateToProps, { fetchContactPage })(Contact)
+export default connect(
+  mapStateToProps,
+  { fetchContactPage },
+)(Contact)

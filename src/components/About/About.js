@@ -8,6 +8,7 @@ class Home extends Component {
   componentDidMount() {
     this.props.fetchAboutPage()
   }
+
   render() {
     return (
       <div className="about">
@@ -20,9 +21,7 @@ class Home extends Component {
   }
 }
 
-function mapStateToProps(state) {
-  return { page: state.aboutPage.data }
-}
+const mapStateToProps = state => ({ page: state.aboutPage.data })
 
 Home.propTypes = {
   fetchAboutPage: PropTypes.func.isRequired,
@@ -31,4 +30,7 @@ Home.propTypes = {
   }).isRequired,
 }
 
-export default connect(mapStateToProps, { fetchAboutPage })(Home)
+export default connect(
+  mapStateToProps,
+  { fetchAboutPage },
+)(Home)
