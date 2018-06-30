@@ -3,6 +3,8 @@
   margin: auto;
   text-align: center;
   max-width: 90%;
+  height: 100vh;
+position: relative;
   @media screen and (min-width: 40em) {
     max-width: 50%;
   }
@@ -23,13 +25,21 @@
   justify-content: center;
   list-style-type: none;
   margin: auto;
-
-  li {
-    flex-basis: 20%;
-    padding: .5em;
-    @media screen and (min-width: 66em) {
-      flex-basis: 13%;
+  position: absolute;
+  bottom: 15vmin;
+   left: 0;
+   right:0;
+   width: 50vmin;
+   @media screen and (min-width: 40em) {
+     width: 40vmin;
   }
+  @media screen and (min-width: 62em) {
+    max-width: 30vmin;
+  }
+  li {
+    flex:1;
+    padding: .5em;
+
 
     img {
       width: 10vmin;
